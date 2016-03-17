@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="@android:color/transparent" 
+    
+    >
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:lines="8"
+        android:text="若使用imshello.com服务器，则直接填写用 户名密码登录或点击注册进行注册，若登录其他服 务器则点击其他"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17dp" >
+
+</TextView>
+
+</RelativeLayout>

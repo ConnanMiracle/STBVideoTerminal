@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="USB摄像头设置"
+                android:textColor="@color/lightgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_switch_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="USB摄像头开关"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/usb_camera_switch_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <RadioButton
+                android:id="@+id/usb_camera_switch_RadioButton_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="开"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/usb_camera_switch_RadioButton_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="关"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_pixel_fmt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="捕获格式："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/usb_camera_pixel_fmt_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:layout_below="@id/usb_camera_pixel_fmt_text" >
+
+            <RadioButton
+                android:id="@+id/usb_camera_pixel_fmt_RadioButton_h264"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="H264"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/usb_camera_pixel_fmt_RadioButton_yuyv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="YUYV"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/usb_camera_pixel_fmt_RadioButton_yuv420"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="YUV420"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/usb_camera_pixel_fmt_RadioButton_nv21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="NV21"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/usb_camera_pixel_fmt_RadioButton_rgb565"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="RGB565"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_stream_fmt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="编码流格式："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/usb_camera_stream_fmt_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:layout_below="@id/usb_camera_stream_fmt_text" >
+
+            <RadioButton
+                android:id="@+id/usb_camera_stream_fmt_RadioButton_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="原始流"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/usb_camera_stream_fmt_RadioButton_yuv420p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="YUV420P"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/usb_camera_stream_fmt_RadioButton_argb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ARGB"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="本地预览方式："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/usb_camera_view_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <RadioButton
+                android:id="@+id/usb_camera_view_RadioButton_bitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="位图"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/usb_camera_view_RadioButton_pixel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="像素"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_frame_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="图像大小："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText 
+            android:id="@+id/usb_camera_frame_width"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/usb_camera_frame_text"
+            android:layout_alignBaseline="@id/usb_camera_frame_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="640"
+            android:inputType="number"
+            android:background="@color/white"/>
+        
+        <TextView
+            android:id="@+id/usb_camera_frame_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/usb_camera_frame_width"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        
+        <EditText 
+            android:id="@+id/usb_camera_frame_height"            
+            android:layout_toRightOf="@id/usb_camera_frame_m"
+            android:layout_alignBaseline="@id/usb_camera_frame_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="480"
+            android:inputType="number"
+            android:background="@color/white"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/usb_camera_device_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="设备名称："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText 
+            android:id="@+id/usb_camera_device_name"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/usb_camera_device_name_text"
+            android:layout_alignBaseline="@id/usb_camera_device_name_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="video0"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:inputType="number"
+            android:background="@color/white"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

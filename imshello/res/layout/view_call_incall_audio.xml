@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/color_white">
+      <TextView 
+          android:layout_height="wrap_content" 
+          android:layout_alignParentLeft="true" 
+          android:textStyle="bold" 
+          android:textColor="@color/color_black" 
+          android:layout_width="fill_parent" 
+          android:gravity="center_horizontal" 
+          android:text="In Call" 
+          android:id="@+id/view_call_incall_audio_textView_info" 
+          android:textSize="30dp" 
+          android:layout_marginBottom="5px"></TextView>
+      <RelativeLayout 
+          android:layout_below="@+id/view_call_incall_audio_textView_info" 
+          android:layout_height="wrap_content" 
+          android:id="@+id/view_call_incall_audio_relativeLayout_avatar" 
+          android:layout_width="fill_parent" 
+          android:layout_marginTop="15px">
+          <ImageView android:layout_height="wrap_content"
+               android:id="@+id/view_call_incall_audio_imageView_avatar" 
+               android:layout_margin="5px" android:layout_width="wrap_content" 
+               android:layout_gravity="center" 
+               android:layout_centerInParent="true" 
+               android:src="@drawable/av_phone"></ImageView>
+          <TextView 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+               android:text="12:00" 
+               android:textStyle="bold"
+                android:textColor="@color/color_black" 
+                android:id="@+id/view_call_incall_audio_textView_duration" 
+                android:textSize="12dp" android:gravity="bottom" 
+                android:layout_toRightOf="@+id/view_call_incall_audio_imageView_avatar"></TextView>
+      </RelativeLayout>
+    <TextView 
+        android:layout_height="wrap_content"
+         android:text="John Doe" 
+         android:textStyle="bold"
+          android:textColor="@color/color_black" 
+          android:gravity="center_horizontal"
+           android:layout_width="fill_parent" 
+           android:id="@+id/view_call_incall_audio_textView_remote" 
+           android:layout_alignRight="@+id/view_call_incall_audio_relativeLayout_avatar" 
+           android:layout_below="@+id/view_call_incall_audio_relativeLayout_avatar" 
+           android:layout_alignLeft="@+id/view_call_incall_audio_relativeLayout_avatar"
+            android:textSize="25dp" 
+            android:layout_marginBottom="5px" 
+            android:layout_marginLeft="5px" 
+            android:layout_marginRight="5px" 
+            android:layout_marginTop="10px"></TextView>
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:weightSum="2" 
+        android:id="@+id/view_call_trying_linearLayout_pick_or_hang" 
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/view_call_incall_audio_slidingDrawer" 
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+       <ImageButton
+        	    android:alpha="0.8"
+        	    android:id="@+id/view_call_incall_audio_imageButton_hang"
+        	android:layout_width="270dp"
+     	    android:layout_height="47dip"
+        	    android:background="@drawable/selectorend1" 
+        	    android:layout_gravity="bottom"
+        	    android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+    
+    <SlidingDrawer
+        android:id="@+id/view_call_incall_audio_slidingDrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/view_call_incall_audio_relativeLayout_avatar"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:visibility="visible" >
+
+        <Button android:layout_width="wrap_content"
+             android:layout_height="80dp" 
+             android:id="@+id/handle" 
+             android:visibility="visible" 
+             android:background="@drawable/keyboard_selected"
+             ></Button>
+        <ImageButton
+        	    android:id="@+id/view_call_trying_imageButton_spokepick_g"
+        	    android:layout_width="80dp"
+        	    android:layout_height="80dp"
+        	    android:background="@drawable/selector_mianti_normal" />
+        <LinearLayout android:id="@+id/content" 
+            android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+        <include 
+            android:id="@+id/view_call_incall_audio_keyboard" 
+            layout="@layout/phone_dialer_buttons" 
+            android:layout_weight="2"
+             android:layout_margin="2px" 
+             android:layout_width="fill_parent" 
+             android:layout_height="fill_parent"/>
+        </LinearLayout>
+    </SlidingDrawer>
+    <ImageView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true" 
+         android:src="@drawable/secure_16" 
+         android:id="@+id/view_call_incall_audio_imageView_secure"></ImageView>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="4" android:orientation="vertical"
+   android:background="@color/white"> 
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+    android:padding="12dip" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back" 
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="发起群聊"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+  
+    <Button 
+        android:id="@+id/confrim_btn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginRight="10dp"
+        android:text="确定"
+        android:background="#00AA00"
+        android:clickable="true"
+        android:textSize="12dp" />
+</RelativeLayout>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dip">
+    
+    <TextView 
+        android:id="@+id/chosen_buudies_textView"
+        android:text="已选择的好友："
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/chosen_buudies_textView_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="30dip"
+        android:textSize="15sp"
+        android:text="已选择" 
+        android:layout_below="@id/chosen_buudies_textView"/>
+    
+</RelativeLayout>
+<ListView 
+    android:id="@+id/choose_buddy_listView" 
+    android:layout_width="fill_parent" 
+    android:scrollbars="vertical" 
+    android:stretchMode="columnWidth" 
+    android:gravity="fill_vertical|fill_horizontal" 
+    android:smoothScrollbar="true" 
+    android:isScrollContainer="true" 
+    android:layout_height="fill_parent" 
+    android:padding="5px" 
+    android:numColumns="1" 
+    android:horizontalSpacing="15px"
+    android:choiceMode="multipleChoice">
+</ListView>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5px"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/screen_codecs_item_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMR-NB-BE"
+            android:textColor="@color/color_black"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/screen_codecs_item_textView_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMR Narrow Band Bandwidth Efficient (8 KHz)"
+            android:textColor="@color/color_black" >
+		</TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/screen_codecs_item_imageView_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/screen_codecs_item_textView_description"
+        android:layout_weight="0"
+        android:src="@drawable/check_off_38" >
+    </ImageView>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="onClick"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="控制器设置"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/controller_setting_text_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="控制器开关"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/controller_setting_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/controller_setting_text_switch"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/controller_setting_radio_btn_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/controller_setting_radio_btn_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/controller_setting_text_port_scan_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/controller_setting_text_switch"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="控制器搜索发送端口"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/controller_setting_edittext_port_scan_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/controller_setting_text_port_scan_send"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/controller_setting_text_port_scan_send"
+            android:gravity="right"
+            android:hint="10001"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/controller_setting_text_port_scan_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/controller_setting_text_port_scan_send"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="控制器搜索接收端口"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/controller_setting_edittext_port_scan_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/controller_setting_text_port_scan_recv"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/controller_setting_text_port_scan_recv"
+            android:gravity="right"
+            android:hint="10002"
+            android:inputType="number"
+            android:textColor="@color/black" />
+        
+                <TextView
+            android:id="@+id/controller_setting_text_port_messenger_remote_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/controller_setting_text_port_scan_recv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="控制器消息接收端口"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/controller_setting_edittext_port_messenger_remote_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/controller_setting_text_port_messenger_remote_recv"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/controller_setting_text_port_messenger_remote_recv"
+            android:gravity="right"
+            android:hint="8000"
+            android:inputType="number"
+            android:textColor="@color/black" />
+        
+                        <TextView
+            android:id="@+id/controller_setting_text_port_messenger_local_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/controller_setting_text_port_messenger_remote_recv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="机顶盒消息接收端口"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/controller_setting_edittext_port_messenger_local_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/controller_setting_text_port_messenger_local_recv"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/controller_setting_text_port_messenger_local_recv"
+            android:gravity="right"
+            android:hint="10003"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

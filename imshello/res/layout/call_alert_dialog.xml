@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:minWidth="280dip"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_outgoing_45"
+            android:background="#FFFFFF" />
+		
+		<ImageView
+  		    android:background="#888888"
+  		    android:layout_width="3dp"
+  		    android:layout_height="fill_parent"/>
+		
+        <TextView
+            android:id="@+id/call_alert_dialog_title"
+            style="@style/DialogText.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="请选择通话类型"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+  
+<!--     <LinearLayout
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+ 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+  
+        <TextView
+            style="@style/DialogText"
+            android:id="@+id/call_alert_dialog_message"
+            android:padding="5dip"
+            android:text="请选择"
+ 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+  
+    </LinearLayout> -->
+  
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#888888"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+  
+        <Button
+            android:id="@+id/call_alert_dialog_positiveButton"
+            android:layout_marginTop="3dip"
+            android:layout_width="0dip"
+ 			android:background="#FFFFFF"
+ 			android:text="语音通话"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:singleLine="true"/>
+  		<ImageView
+  		    android:background="#888888"
+  		    android:layout_width="3dp"
+  		    android:layout_height="fill_parent"/>
+        <Button
+            android:id="@+id/call_alert_dialog_negativeButton"
+ 			android:background="#FFFFFF"
+ 			android:text="视频通话"
+            android:layout_marginTop="3dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+ 
+  
+    </LinearLayout>
+  
+</LinearLayout>

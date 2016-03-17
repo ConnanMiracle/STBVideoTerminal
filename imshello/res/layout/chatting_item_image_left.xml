@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="6dp">
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:gravity="center_horizontal">
+	        <TextView
+	            android:id="@+id/tv_sendtime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	           	style="@style/chat_text_date_style"
+	           	/>
+	    </LinearLayout>
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp" >
+	         	<ImageView 
+		           android:id="@+id/iv_userhead"
+		           android:layout_width="60dp"
+		           android:layout_height="60dp"
+		           android:focusable="false" 
+		           android:layout_alignParentLeft="true" 
+                   android:layout_alignParentTop="true" 
+		           android:background="@drawable/mini_avatar_shadow"
+		          />
+
+	         	<ImageView
+	         	    android:id="@+id/chat_image"
+	         	    android:layout_width="60dp"
+	         	    android:layout_height="60dp"
+	         	    android:layout_alignParentTop="true"
+	         	    android:layout_toRightOf="@+id/iv_userhead"
+	         	    android:background="@drawable/chatfrom_bg"
+	         	    android:focusable="false"
+	         	    android:src="@drawable/refresh_48" />
+
+	    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|fill_horizontal"
+    android:background="@drawable/phone_selkeypad"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/dialer_text_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="2"
+        android:textColor="@color/typeface_color5"
+        android:textSize="30sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dialer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/dialer_text_num"
+        android:paddingTop="10dip"
+        android:text="ABC"
+        android:textColor="@color/typeface_color6"
+        android:textSize="12sp" >
+    </TextView>
+
+</RelativeLayout>

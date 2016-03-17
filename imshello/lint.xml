@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="Instantiatable">
+        <ignore path="src/org/imshello/droid/Screens/ScreenHistory.java" />
+    </issue>
+    <issue id="InvalidPackage">
+        <ignore path="libs/unboundid-ldapsdk-se.jar" />
+    </issue>
+    <issue id="MissingRegistered">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="MissingTranslation">
+        <ignore path="res/values/strings.xml" />
+    </issue>
+</lint>

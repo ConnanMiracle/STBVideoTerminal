@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/screen_qos_textView_media"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="2px"
+            android:text="Media"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/screen_qos_textView_vsize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_media"
+            android:layout_marginLeft="10px"
+            android:paddingTop="5px"
+            android:text="Preferred Video Size"
+            android:textSize="16dp"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/screen_qos_Spinner_vsize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_vsize"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="5px" 
+            android:background="@color/gray">
+        </Spinner>
+		
+        <TextView
+            android:id="@+id/screen_qos_textView_vfps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/screen_qos_Spinner_vsize"
+            android:text="帧速率："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText 
+            android:id="@+id/screen_qos_editText_vfps"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@id/screen_qos_textView_vfps"
+            android:layout_toRightOf="@id/screen_qos_textView_vfps"
+            android:layout_alignBaseline="@id/screen_qos_textView_vfps"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="640"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_editbox"
+            android:inputType="number"/>
+        
+        <CheckBox
+            android:id="@+id/screen_qos_checkBox_zeroArtifacts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_vfps"
+            android:text="Zero Video Artifacts (Perfect)"
+            android:textStyle="bold" 
+            android:textColor="@color/black">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/screen_qos_textView_preconditions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_checkBox_zeroArtifacts"
+            android:layout_marginTop="5px"
+            android:paddingLeft="2px"
+            android:paddingTop="5px"
+            android:text="Preconditions"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/screen_qos_textView_precond_strength"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_preconditions"
+            android:layout_marginLeft="10px"
+            android:paddingTop="5px"
+            android:text="Strength"
+            android:textSize="16dp"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/screen_qos_spinner_precond_strength"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_precond_strength"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="5px"
+            android:background="@color/gray" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/screen_qos_textView_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_spinner_precond_strength"
+            android:layout_marginLeft="10px"
+            android:paddingTop="5px"
+            android:text="Type"
+            android:textSize="16dp"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/screen_qos_Spinner_precond_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_textView_type"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="5px"
+           android:background="@color/gray" >
+        </Spinner>
+
+        <CheckBox
+            android:id="@+id/screen_qos_checkBox_sessiontimers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_Spinner_precond_type"
+            android:text="Enable Session Timers"
+            android:textColor="#000000" >
+        </CheckBox>
+
+        <RelativeLayout
+            android:id="@+id/screen_qos_relativeLayout_sessiontimers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_qos_checkBox_sessiontimers"
+            android:layout_marginLeft="10px" 
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/screen_qos_textView_stimeout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Timeout"
+                android:textSize="16dp"
+                android:textColor="#000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_qos_editText_stimeout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_qos_textView_stimeout"
+                android:layout_marginRight="5px"
+                android:inputType="number"
+                android:text="90" 
+                android:textColor="#000000">
+            </EditText>
+
+            <TextView
+                android:id="@+id/screen_qos_textView_refresher"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_qos_editText_stimeout"
+                android:text="Refresher"
+                android:textSize="16dp"
+                android:textColor="#000000" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/screen_qos_spinner_refresher"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_qos_textView_refresher"
+                android:layout_marginRight="5px"
+                android:background="@color/gray">
+            </Spinner>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

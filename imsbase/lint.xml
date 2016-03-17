@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InvalidPackage">
+        <ignore path="libs/simple-xml-2.3.4.jar" />
+        <ignore path="libs/simple-xml-2.3.4.jar" />
+        <ignore path="libs/simple-xml-2.3.4.jar" />
+        <ignore path="libs/simple-xml-2.3.4.jar" />
+    </issue>
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/org/imshello/ngn/media/NgnProxyVideoConsumerGL.java" />
+    </issue>
+</lint>

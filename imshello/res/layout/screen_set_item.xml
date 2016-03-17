@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:background="@drawable/preference_single_item" >
+
+	<TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip" 
+        android:textColor="@color/black_color"
+        android:text="UI设计"
+        android:textSize="17sp">
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="12dip"
+        android:layout_height="12dip"
+        android:layout_marginRight="12dip"		
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/mm_submenu" >
+    </ImageView>
+</RelativeLayout>

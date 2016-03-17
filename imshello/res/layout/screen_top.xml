@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+            android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+            android:layout_width="match_parent" 
+    		android:layout_height="wrap_content" 
+    		android:padding="12dip"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content" 
+    			android:layout_alignParentLeft="true"
+    			android:gravity="center"
+                >
+                <ImageView 
+                    android:id="@+id/key"
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:src="@drawable/icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:text="IMSHello"
+    				android:layout_marginLeft="10dip"
+    				android:textSize="17dp"
+    				android:textColor="@color/lightgray"
+
+                    />
+            </LinearLayout>
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content" 
+    			android:layout_alignParentRight="true"
+    			android:gravity="center"
+                >
+              <ImageView 
+                 
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:id="@+id/search"
+    				android:layout_marginRight="20dip"
+    				android:src="@drawable/search"
+                    />
+                 <ImageView 
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:id="@+id/add"
+    				android:layout_marginRight="20dip"
+    				android:src="@drawable/actionbar_add_icon"
+                    />
+                  <ImageView 
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:id="@+id/set"
+    				android:src="@drawable/actionbar_more_icon"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

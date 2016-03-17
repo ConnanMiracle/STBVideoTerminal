@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@color/white_color"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="12dip"		
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/screen_name"
+        android:layout_toRightOf="@+id/user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:textColor="@color/typeface_color11"
+        android:text="测试1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="17sp" >
+    </TextView>
+
+	<TextView
+        android:id="@+id/text"
+        android:layout_toRightOf="@+id/user_icon"
+        android:layout_below="@+id/screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:textColor="@color/typeface_color12"
+        android:text="UI设计"
+        android:textSize="14sp">
+    </TextView>
+</RelativeLayout>

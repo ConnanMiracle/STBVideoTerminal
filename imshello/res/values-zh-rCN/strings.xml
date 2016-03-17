@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">IMSHello</string>
+    <string name="imshello_revision">1060</string>
+    <string name="spinner_ipversion">Select IP version</string>
+    <string name="spinner_pcscf_discovery">Select PCSCF Discovery Mode</string>
+    <string name="spinner_transport">Select Network Transport</string>
+    <!-- Strings -->
+    <string name="day_today">Today</string>
+    <string name="day_yesterday">Yesterday</string>
+    <string formatted="false" name="copyright">
+   IMSHello
+  </string>
+    <string name="string_answer">Answer</string>
+    <string name="string_endcall">End Call</string>
+    <string name="string_speaker_on">Speaker ON</string>
+    <string name="string_speaker_off">Speaker OFF</string>
+    <string name="string_mute_on">Mute ON</string>
+    <string name="string_mute_off">Mute OFF</string>
+    <string name="string_hold">Hold</string>
+    <string name="string_resume">Resume</string>
+    <string name="string_send_video">Send Video</string>
+    <string name="string_stop_video">Stop Video</string>
+    <string name="string_switch_camera">Switch camera</string>
+      <string name="string_call_terminated">通话终止</string>
+    <string name="string_incall">通话中</string>
+    <string name="string_call_incoming">来电</string>
+    <string name="string_call_outgoing">呼叫中</string>
+    <string name="string_call_cancelled">呼叫取消</string>
+    <!-- Colors -->
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_violet">#9900FF</color>
+    <color name="color_gray">#736F6E</color>
+    <color name="color_dark">#161C27</color>
+    <color name="color_light">#4D6288</color><string name="service">企业好友</string>
+    <!-- add -->
+       <string name="address_book">通讯录</string>
+    <string name="message">聊天</string><string name="search">搜索</string>
+    
+    <string name="phone">电话</string>
+    <string name="me">我</string>
+    <string name="meeting">会议</string>
+    <string name="exit">退出</string>
+    <string name="dial_prompt_text">输入号码</string>
+    <string name="telephone">住宅</string>
+    <string name="mobile_phone">手机</string>
+    <string name="talk">信息</string>
+    <string name="identity">切换用户</string>
+    <string name="net">网络设置</string>
+    <string name="nat">NAT设置</string>
+    <string name="history">通话记录</string>
+      <string name="codes">编解码</string>
+      <string name="toast1">请先登录</string>
+      
+      <string name="input_user">请输入账号</string>
+      <string name="input_pass">请输入密码</string>
+      <string name="login">登录</string>
+      <string name="unlogin">退出登录</string>
+      <string name="logined">已登录</string>
+      <string name="remember">记住密码</string>
+      <string name="register">注册帐号</string>
+      <string name="phone_number">手机号</string>
+      <string name="pass">密码</string>
+      <string name="ok">确定</string>
+      <string name="input_phone">请输入手机号</string>
+      <string name="send">发送</string>
+      <string name="new_pass">新密码</string>
+      <string name="input_new">请输入新密码</string>
+      <string name="input_again">请再输入一次</string>
+      <string name="change">修改密码</string>
+      <string name="set">设置</string>
+      <string name="tip">未联网。。。</string>
+      <string name="key">请输入关键字</string>
+      <string name="exit_alert">确定退出么？</string>
+      <string name="yes">确定</string>
+      <string name="no">取消</string>
+      <string name="buddy">好友</string>
+</resources>

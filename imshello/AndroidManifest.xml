@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.imshello.droid"
+    android:versionCode="20160130"
+    android:versionName="v20160130" >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.audio.low_latency"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="IMSHello"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:persistent="true" >
+        <service android:name=".NativeService" >
+        </service>
+
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Screens.ScreenSplash" />
+        <activity android:name=".Screens.ScreenAV" >
+        </activity>
+        <activity android:name=".Screens.ScreenInterceptCall" />
+        <activity android:name=".Screens.ScreenChat" >
+        </activity>
+        <activity android:name=".Screens.ScreenChooseChatMember" >
+        </activity>
+        <activity android:name=".Screens.ScreenMultiChat" >
+        </activity>
+        <activity android:name=".Screens.Login" >
+        </activity>
+        <activity android:name=".Screens.ChangePassword" >
+        </activity>
+        <activity android:name=".Screens.SwitchUser" >
+        </activity>
+        <activity android:name=".Screens.RegisterNext" >
+        </activity>
+        <activity android:name=".Screens.Register" >
+        </activity>
+
+        <intent-filter>
+
+            <!-- <action android:name="android.intent.action.CALL" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <data android:scheme="sip" /> -->
+        </intent-filter>
+
+        <activity android:name=".Screens.TabContacts" >
+        </activity>
+        <activity android:name=".Screens.TabMessages" >
+        </activity>
+        <activity android:name=".Screens.TabLDAPContacts" >
+        </activity>
+        <activity android:name=".Screens.TabBuddy" >
+        </activity>
+        <activity android:name=".Screens.ScreenSettings" >
+        </activity>
+        <activity android:name=".Screens.SettingsIdentity" >
+        </activity>
+        <activity android:name=".Screens.SettingsNetwork" >
+        </activity>
+        <activity android:name=".Screens.SettingsSecurity" >
+        </activity>
+        <activity android:name=".Screens.SettingsPresence" >
+        </activity>
+        <activity android:name=".Screens.SettingsMessaging" >
+        </activity>
+        <activity android:name=".Screens.SettingsCodecs" >
+        </activity>
+        <activity android:name=".Screens.SettingsNatt" >
+        </activity>
+        <activity android:name=".Screens.SettingsQoS" >
+        </activity>
+        <activity android:name=".Screens.ScreenSetAnswerPhone" >
+        </activity>
+        <activity android:name=".Screens.ScreenFileTransferQueue" >
+        </activity>
+        <activity android:name=".Screens.ScreenFileTransferView" >
+        </activity>
+        <activity android:name=".Screens.ScreenAVQueue" >
+        </activity>
+        <activity android:name=".Screens.ScreenChatQueue" >
+        </activity>
+        <activity android:name=".Screens.ScreenMain" >
+        </activity>
+        <activity android:name=".Screens.ScreenSet" >
+        </activity>
+        <activity android:name=".Screens.TestCameraMain" >
+        </activity>
+        <activity android:name=".Utils.FileChooserDialog"></activity>
+        <activity android:name=".Screens.BuddyDetail"></activity>
+        <activity android:name=".Screens.SettingsUSBCamera"></activity>
+        <activity android:name=".Screens.SettingsController"></activity>
+        <activity android:name=".Screens.SettingsBufferQueue"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_dark"
+        android:gravity="center"
+        android:padding="10px"
+        android:text="Pending transfers"
+        android:textColor="@color/color_white"
+        android:textSize="25dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/screen_filetrans_queue_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

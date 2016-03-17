@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linearLayout_principal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/net"
+                android:textColor="@color/lightgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/screen_network_linearLayout_network"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px" 
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/screen_network_checkBox_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="Enable WiFi"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/screen_network_checkBox_3g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="Enable 4G/3G/2.5G"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" >
+                </CheckBox>
+                
+                <CheckBox
+                    android:id="@+id/screen_network_checkBox_ethernet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="Enable Ethernet"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" >
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_network_linearLayout_ipversion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_linearLayout_network" >
+
+                <RadioGroup
+                    android:id="@+id/screen_network_radioGroup_ipversion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5px"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black" >
+
+                    <RadioButton
+                        android:id="@+id/screen_network_radioButton_ipv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:checked="true"
+                        android:text="IPv4"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/screen_network_radioButton_ipv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="IPv6"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_host"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_linearLayout_ipversion"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Proxy-CSCF Host"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_network_editText_pcscf_host"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_textView_pcscf_host"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@drawable/login_editbox"
+                android:text="127.0.0.1"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_port"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_editText_pcscf_host"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Proxy-CSCF Port"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_network_editText_pcscf_port"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_textView_pcscf_port"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@drawable/login_editbox"
+                android:inputType="number"
+                android:text="5060"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+            
+            <TextView
+                android:id="@+id/screen_network_textView_realm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_editText_pcscf_port"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Realm"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_network_editText_realm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_textView_realm"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@drawable/login_editbox"
+                android:text="imshello.org"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+            
+
+            <TextView
+                android:id="@+id/screen_network_textView_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_editText_realm"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Transport"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/screen_network_spinner_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_textView_transport"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@color/gray"
+                android:prompt="@string/spinner_transport"
+                android:textColor="@color/black" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_dicovery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_spinner_transport"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Proxy-CSCF Discovery"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/screen_network_spinner_pcscf_discovery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_textView_pcscf_dicovery"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@color/gray"
+                android:prompt="@string/spinner_pcscf_discovery"
+                android:textColor="@color/black" >
+            </Spinner>
+
+            <CheckBox
+                android:id="@+id/screen_network_checkBox_sigcomp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_network_spinner_pcscf_discovery"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="2dp"
+                android:text="Enable SigComp"
+                android:textColor="@color/black"
+                android:textSize="20dp" >
+            </CheckBox>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

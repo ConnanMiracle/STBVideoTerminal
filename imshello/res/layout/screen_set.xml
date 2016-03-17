@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#00000000"
+        android:padding="12dip"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/set"
+                android:textColor="@color/lightgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/personal_data"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/codec_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/change_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <!-- ******************************************************************** -->
+
+            <include
+                android:id="@+id/natt_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/network_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/usb_camera_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/qos_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/controller_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+
+            <include
+                android:id="@+id/bufferqueue_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                layout="@layout/screen_set_item" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-80dp"
+        android:background="@color/lightgray"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

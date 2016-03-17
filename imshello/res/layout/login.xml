@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+   	   <RelativeLayout 
+   	        android:id="@+id/ab"
+            android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+            android:layout_width="match_parent" 
+    		android:layout_height="wrap_content" 
+    		android:padding="12dip"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content" 
+    			android:layout_alignParentLeft="true"
+    			android:gravity="center"
+                >
+                <ImageView 
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:src="@drawable/icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:text="@string/login"
+    				android:layout_marginLeft="10dip"
+    				android:textSize="18sp"
+    				android:textColor="@color/lightgray"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        
+   	   <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="150dp"
+        android:background="@drawable/login_input"
+        android:orientation="vertical" 
+        >
+  
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="#00ffffff"
+                android:hint="@string/input_user"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black" />
+            </LinearLayout>
+     <LinearLayout
+        android:id="@+id/linearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="200dp"
+        android:background="@drawable/login_input"
+        android:orientation="vertical" 
+        >
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:hint="@string/input_pass"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" 
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/linearLayout02"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style_green"
+        android:layout_marginBottom="5dp"
+        android:textSize="17sp"
+        android:text="@string/login" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/bottom_two"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp" >
+
+        <CheckBox
+            android:id="@+id/is_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/checkbox_bg"
+            android:paddingTop="2dp"
+            android:text="@string/remember"
+            android:textSize="12sp" 
+            android:textColor="@color/black"/>
+
+       
+
+    </RelativeLayout>
+     <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:background="#ffffff"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bottom_two"
+            android:layout_marginTop="120dp"
+            android:text="@string/register"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    <ImageView
+        android:id="@+id/tiptext"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/linearLayout01"
+        android:layout_below="@+id/ab"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/tip"
+        android:clickable="true" 
+     />
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ab"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:paddingLeft="8dp"
+        android:paddingRight="25dp"
+        android:text="切    换"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

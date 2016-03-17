@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/screen_contacts_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/screen_contacts_radioButton_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Local Storage" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/screen_contacts_radioButton_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_radioButton_local"
+            android:clickable="true"
+            android:text="Remote Storage (XDMS)" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/screen_contacts_relativeLayout_remote"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/screen_contacts_radioGroup"
+        android:layout_marginLeft="20px" >
+
+        <TextView
+            android:id="@+id/screen_contacts_textView_xcaproot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Base URI (xcap-root)" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/screen_contacts_editText_xcaproot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_textView_xcaproot"
+            android:text="http://imshello.org:8080/services" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/screen_contacts_textView_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_editText_xcaproot"
+            android:text="Authentication Name (XUI)" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/screen_contacts_editText_xui"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_textView_username"
+            android:text="sip:alice@open-ims.test" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/screen_contacts_textView_passxord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_editText_xui"
+            android:text="Password" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/screen_contacts_editText_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_contacts_textView_passxord"
+            android:inputType="textPassword" >
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

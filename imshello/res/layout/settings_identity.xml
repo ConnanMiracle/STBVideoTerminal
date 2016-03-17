@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linearLayout_principal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+           <ImageView 
+                    android:id="@+id/back"
+                    android:layout_width="30dp" 
+    				android:layout_height="30dp" 
+    				android:src="@drawable/icon"
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/identity"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+      <LinearLayout
+         android:id="@+id/main"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:orientation="vertical">      
+            <TextView
+                android:id="@+id/screen_identity_textView_displayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_identity_editText_displayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:ellipsize="end"
+                android:gravity="fill_horizontal"
+                android:text="alice"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="gone" >
+            </EditText>
+         
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            >
+            <TextView
+                android:id="@+id/screen_identity_textView_impu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="@color/black"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_identity_editText_impu"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:text="sip:alice@open-ims.test"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/screen_identity_textView_impi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Private Identity*"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_identity_editText_impi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:text="alice@open-ims.test"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="gone" >
+            </EditText>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/screen_identity_textView_password"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="@color/black"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_identity_editText_password"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:inputType="textPassword"
+                android:text="alice"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+          </LinearLayout>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/screen_identity_TextView_realm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="域名"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="visible" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_identity_editText_realm"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:text="sip:open-ims.test"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="visible" >
+            </EditText>
+            
+          </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/screen_identity_checkBox_earlyIMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3GPP Early IMS Security"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" >
+            </CheckBox>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_host"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="服务器地址"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="visible" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_network_editText_pcscf_host"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:text="127.0.0.1"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="visible" >
+            </EditText>
+        </LinearLayout>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_port"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Proxy-CSCF Port"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/screen_network_editText_pcscf_port"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:inputType="number"
+                android:text="5060"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:visibility="gone" >
+            </EditText>
+         </LinearLayout>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/screen_network_textView_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Transport"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/screen_network_spinner_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:prompt="@string/spinner_transport"
+                android:textColor="@color/black"
+                android:visibility="gone" >
+            </Spinner>
+      </LinearLayout>
+            
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/screen_network_textView_pcscf_dicovery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Proxy-CSCF Discovery"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/screen_network_spinner_pcscf_discovery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:prompt="@string/spinner_pcscf_discovery"
+                android:textColor="@color/black"
+                android:visibility="gone" >
+            </Spinner>
+           </LinearLayout>
+           
+            
+          
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

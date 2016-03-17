@@ -1,0 +1,14 @@
+版本说明
+
+versionCode:20160130
+
+versionName:v20160130
+
+
+特性：
+
+机顶盒控制功能稳定，配合新版控制器（包括改变ControllerService的构造函数，Messenger的初始化方法等）。
+
+增加BufferQueue大小设置，增加BufferItem大小设置。
+
+将原本的Messenger的一个监听端口，改为远端监听端口，和本地监听端口。
